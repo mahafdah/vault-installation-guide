@@ -29,7 +29,9 @@ helm install vault hashicorp/vault --set='server.dev.enabled=true' -n vault
 ```bash
 kubectl get pods -n vault
 ```
+```sh
 NAME                                    READY   STATUS    RESTARTS   AGE
 vault-0                                 1/1     Running   0          3h8m
 vault-agent-injector-59775cb565-8xrmc   1/1     Running   0          3h8m
+```
 
