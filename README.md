@@ -71,7 +71,7 @@ vault secrets enable -path=nginx-secret kv
 ```
     
 ```bash
-    vault secrets enable -version=2 -path= nginx-secret kv 
+    vault secrets enable -version=2 -path=nginx-secret kv 
 ```
 
 
