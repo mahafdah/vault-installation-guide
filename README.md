@@ -87,10 +87,12 @@ vault kv put nginx-secret/config username="nginx-user" password="nginx-password"
 5- Execute bellow command to retrieve your registered secrets
 
 ```bash
-vault kv get nginx-secret/config
+vault kv get <path name>/<path secret> #e.g. nginx-secret/config
 ```
 
-
+```bash
+vault kv get nginx-secret/config
+```
 
 
 
