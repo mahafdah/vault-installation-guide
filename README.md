@@ -96,7 +96,7 @@ vault kv get nginx-secret/config
 
 # Create Vault Policy
 
-We need to move from Back slash / $ root to Telda ~ $ root inside pod interactive shell (bin/sh) to create ("nginx-policy.hcl") file and add the bellow inside this file then save.
+1- We need to move from Back slash / $ root to Telda ~ $ root inside pod interactive shell (bin/sh) to create ("nginx-policy.hcl") file and add the bellow inside this file then save.
 
 ```bash
 cd # e.g. to move from / $ to ~ $ to avoid permission denied 
@@ -106,7 +106,7 @@ cd # e.g. to move from / $ to ~ $ to avoid permission denied
 vi nginx-policy.hcl
 ```
 - Copy bellow and past it inside ("nginx-policy.hcl") file and save file.
-- 
+
 ```bash
 path "nginx-secret/*" {
  capabilities = ["read", "list", "update", "create"]
@@ -114,8 +114,15 @@ path "nginx-secret/*" {
 
 ```
 
+2- Execute bellow command to add the policy 
 
+```bash
+vault policy write <name of policy e.g. nginx-policy> <the .hcl file e.g. nginx-policy.hcl> 
+```
 
+```bash
+vault policy write nginx-policy nginx-policy.hcl
+```
 
 
 
