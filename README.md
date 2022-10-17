@@ -40,7 +40,7 @@ vault-agent-injector-59775cb565-8xrmc   1/1     Running   0          3h8m
 1- Execute bellow command to interactive shell session on the vault-0 pod.
 
 ```bash
-kubectl exec vault-0 -n vault -it – bin/sh
+kubectl exec vault-0 -n vault -it bin/sh
 ```
 
 2- Create new secret engine path.
