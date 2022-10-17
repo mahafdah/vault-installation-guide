@@ -7,3 +7,8 @@ Add the HashiCorp Helm repository.
 ```bash
 helm repo add hashicorp https://helm.releases.hashicorp.com
 ```
+Update all repositories to latest versions
+
+```bash
+helm repo update
+```
