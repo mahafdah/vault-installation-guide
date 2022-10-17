@@ -99,9 +99,14 @@ vault kv get nginx-secret/config
 We need to move from Back slash / $ root to Telda ~ $ root inside pod interactive shell (bin/sh) to create ("nginx-policy.hcl") file and add the bellow inside this file then save.
 
 ```bash
-cd
+cd # e.g. to move from / $ to ~ $ to avoid permission denied 
 ```
 
+```bash
+nginx-policy.hcl
+```
+
+vi 
 ```bash
 path "nginx-secret/*" {
  capabilities = ["read", "list", "update", "create"]
