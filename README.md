@@ -43,6 +43,12 @@ vault-agent-injector-59775cb565-8xrmc   1/1     Running   0          3h8m
 kubectl exec vault-0 -n vault -it – bin/sh
 ```
 
+2- Create new secret engine path.
+
+```bash
+vault secrets enable -path=<path name> kv # e.ge nginx-secret
+```
+
 
 
 
