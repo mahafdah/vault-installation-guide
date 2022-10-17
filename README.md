@@ -109,6 +109,14 @@ vault kv get <path name>/<path secret> #e.g. nginx-secret/config
 vault kv get nginx-secret/config
 ```
 
+```bash
+====== Data ======
+Key         Value
+---         -----
+password    nginx-password
+username    nginx-user
+```
+
 # Create Vault Policy
 
 1- We need to move from Back slash / $ root to Telda ~ $ root inside pod interactive shell (bin/sh) to create ("nginx-policy.hcl") file and add the bellow inside this file then save.
