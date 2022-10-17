@@ -64,15 +64,15 @@ vault secrets enable -path=nginx-secret kv
     vault secrets disable nginx-secret
 ```
     
-   - Second set version 2 and enable secret engine
+- Second set version 2 and enable secret engine
   
-    ```bash
+```bash
     vault secrets enable -version=2 -path=<path name> kv # e.g. nginx-secret
-    ```
+```
     
-    ```bash
+```bash
     vault secrets enable -version=2 -path= nginx-secret kv 
-    ```
+```
 
 
 
