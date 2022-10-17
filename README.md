@@ -74,9 +74,15 @@ vault secrets enable -version=2 -path=<path name> kv # e.g. nginx-secret
 vault secrets enable -version=2 -path=nginx-secret kv 
 ```
 
+4- Create a secret path with a Key/Value
 
+```bash
+vault kv put <path name>/<path secret> key=value key=value #e.g. path name:(nginx-secret) path secret:(config) key & value username="nginx-user" password="nginx-password"
+```
 
-
+```bash
+vault kv put nginx-secret/config username="nginx-user" password="nginx-password"
+```
 
 
 
