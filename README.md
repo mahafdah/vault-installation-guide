@@ -1,1 +1,1 @@
-# vault-installation-guide
+# Vault Installation Guide
