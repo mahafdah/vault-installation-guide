@@ -46,7 +46,11 @@ kubectl exec vault-0 -n vault -it – bin/sh
 2- Create new secret engine path.
 
 ```bash
-vault secrets enable -path=<path name> kv # e.ge nginx-secret
+vault secrets enable -path=<path name> kv # e.g. nginx-secret
+```
+
+```bash
+vault secrets enable -path=nginx-secret kv 
 ```
 
 
