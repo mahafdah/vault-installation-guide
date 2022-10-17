@@ -124,7 +124,36 @@ vault policy write <name of policy e.g. nginx-policy> <the .hcl file e.g. nginx-
 vault policy write nginx-policy nginx-policy.hcl
 ```
 
+# Create Vault AppRole
 
+1- First we need to enable vault auth.
+
+```bash
+vault auth enable approle
+```
+
+2- Execute bellow command to creat AppRole (ngix-role) and the token policy equal to nginx policy name created e.g. (nginx-policy)
+
+```bash
+vault write auth/approle/role/<role name e.g. nginx-role> \
+secret_id_ttl=10000m \
+token_num_uses=10 \
+token_ttl=20000m \
+token_max_ttl=30000m \
+secret_id_num_uses=40 \
+token_policies=<policy name e.g. nginx-policy>
+```
+
+```bash
+vault write auth/approle/role/nginx-role \
+ secret_id_ttl=10000m \
+ token_num_uses=10 \
+ token_ttl=20000m \
+ token_max_ttl=30000m \
+ secret_id_num_uses=40 \
+ token_policies=nginx-policy
+Success! Data written to: auth/approle/role/nginx-role
+```
 
 
 
