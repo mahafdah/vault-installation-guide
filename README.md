@@ -96,7 +96,7 @@ vault kv get nginx-secret/config
 
 # Create Vault Policy
 
-We need to move from / $ root to ~ $ inside pod bin/sh to create nginx-policy.hcl file and add the bellow inside this file then save.
+We need to move from (/ $) root to (~ $) inside pod interactive shell (bin/sh) to create 'nginx-policy.hcl' file and add the bellow inside this file then save.
 
 
 
