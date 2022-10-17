@@ -155,7 +155,6 @@ vault write auth/approle/role/nginx-role \
  token_max_ttl=30000m \
  secret_id_num_uses=40 \
  token_policies=nginx-policy
-Success! Data written to: auth/approle/role/nginx-role
 ```
 
 
