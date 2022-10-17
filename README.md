@@ -60,8 +60,7 @@ vault secrets enable -path=nginx-secret kv
     ```bash
     vault secrets disable <path name> kv # e.g. nginx-secret
     ```
-    
-    ```bash
+        ```bash
     vault secrets disable nginx-secret
     ```
     
