@@ -55,7 +55,7 @@ vault secrets enable -path=nginx-secret kv
 
 3- Check the engine version is set to version 2
 
-  1- First disable the secret engine.
+   - First disable the secret engine.
 
     ```bash
     vault secrets disable <path name> kv # e.g. nginx-secret
@@ -65,7 +65,7 @@ vault secrets enable -path=nginx-secret kv
     vault secrets disable nginx-secret
     ```
     
-  2- Second set version 2 and enable secret engine
+   - Second set version 2 and enable secret engine
   
     ```bash
     vault secrets enable -version=2 -path=<path name> kv # e.g. nginx-secret
