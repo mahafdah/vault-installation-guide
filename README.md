@@ -7,8 +7,20 @@ I am using the [Helm-Chart](https://www.vaultproject.io/docs/platform/k8s/helm) 
 ```bash
 helm repo add hashicorp https://helm.releases.hashicorp.com
 ```
-2- Update all repositories to latest versions
+2- Update all repositories to latest versions.
 
 ```bash
 helm repo update
+```
+
+3- Create namespace vault.
+
+```bash
+kubectl create namespace vault
+```
+
+4- Install the latest version of the Vault server running in development mode.
+
+```bash
+helm install vault hashicorp/vault --set='server.dev.enabled=true' -n vault
 ```
