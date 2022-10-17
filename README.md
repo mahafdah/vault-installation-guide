@@ -84,6 +84,21 @@ vault kv put <path name>/<path secret> key=value key=value #e.g. path name:(ngin
 vault kv put nginx-secret/config username="nginx-user" password="nginx-password"
 ```
 
+```bash
+
+====== Secret Path ======
+nginx-secret/data/config
+
+======= Metadata =======
+Key                Value
+---                -----
+created_time       2022-10-17T23:44:03.063569128Z
+custom_metadata    <nil>
+deletion_time      n/a
+destroyed          false
+version            1
+```
+
 5- Execute bellow command to retrieve your registered secrets
 
 ```bash
