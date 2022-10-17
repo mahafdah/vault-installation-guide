@@ -35,3 +35,24 @@ vault-0                                 1/1     Running   0          3h8m
 vault-agent-injector-59775cb565-8xrmc   1/1     Running   0          3h8m
 ```
 
+# Create Vault Secret
+
+Execute bellow command to interactive shell session on the vault-0 pod.
+
+```bash
+kubectl exec vault-0 -n vault -it – bin/sh
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
