@@ -103,10 +103,10 @@ cd # e.g. to move from / $ to ~ $ to avoid permission denied
 ```
 
 ```bash
-nginx-policy.hcl
+vi nginx-policy.hcl
 ```
-
-vi 
+- Copy bellow and past it inside ("nginx-policy.hcl") file and save file.
+- 
 ```bash
 path "nginx-secret/*" {
  capabilities = ["read", "list", "update", "create"]
