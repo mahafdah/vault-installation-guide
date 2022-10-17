@@ -134,15 +134,18 @@ vault auth enable approle
 
 2- Execute bellow command to creat AppRole (ngix-role) and the token policy equal to nginx policy name created e.g. (nginx-policy)
 
+- Example
+
 ```bash
-vault write auth/approle/role/<role name e.g. nginx-role> \
+vault write auth/approle/role/<role name e.g. nginx-role> \ #role name e.g. nginx-role
 secret_id_ttl=10000m \
 token_num_uses=10 \
 token_ttl=20000m \
 token_max_ttl=30000m \
 secret_id_num_uses=40 \
-token_policies=<policy name e.g. nginx-policy>
+token_policies=<policy name e.g. nginx-policy> #policy name e.g. nginx-policy
 ```
+- Executed
 
 ```bash
 vault write auth/approle/role/nginx-role \
