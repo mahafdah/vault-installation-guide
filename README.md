@@ -157,8 +157,9 @@ vault write auth/approle/role/nginx-role \
  token_policies=nginx-policy
 ```
 
+# Retrive Role ID & Secret ID from generated AppRole
 
-
+Note: We need the Role ID and Secret ID because later we need to connect Argocd with Vault to retrieve all secret keys, after you retrieve them safe for use later on.
 
 
 
